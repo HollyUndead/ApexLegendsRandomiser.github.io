@@ -1,192 +1,186 @@
 .TopScreen{
-    max-width: 100%;
-      width: fit-content;
-      margin: 0 auto;
-      padding: 1em;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-  }
-  
-  header>div{
-      width: fit-content;
-      margin: 0 auto;
-    outline: 5px solid red;
-  }
-  
-  img{
-      width: 10%;
-      vertical-align: top;
-      min-width: 20px;
-  }
-  
-  div{
-      line-height: 15px;
-  }
-  .Legend{
-      width: fit-content;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-      padding: 5px;
-      max-width: 40%;
-  }
-  
-  .Weapon{
-      margin: 0 auto;
-      max-width: 100%;
-      width: fit-content;
-      min-width: 350px;
-      display: grid;
-  /*     grid-template-rows: 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      column-gap: 20px;
-    background-color: purple;
-    padding: 10px;
-  }
-  
-  .Weapon>div{
-      margin-top: 15px;
-  }
-  
-  .howManyLegend{
-      margin-left: 15%;
-  }
-  
-  legend{
-      margin-left: 30%;
-      margin-bottom: 9px;
-  }
-  
-  .legendImg{
-      width: 90%;
-  }
-  
-  .LegendList{
-      width: fit-content;
-      margin: 0 auto;
-      text-align: center;
-      gap: 40px;
-      width: 80%;
-  }
-  
-  .LegendR{
-      width: 100%;
-  }
-  
-  .classimg{
-      width: 5%
-  }
-  
-  .weaponImg{
-      max-height: 70%;
-      width: auto;
-      max-width: 90%;
-      min-width: 30%;
-      margin: 10px 5% 0px;
-      vertical-align: middle;
-  }
-  
-  .weaponDivClass{
-      margin: 5px 5px;
-      max-height: 80%;
-  }
-  
-  .WeaponList{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-      text-align: center;
-  }
-  
-  #weapons1{
-      margin: 0px auto;
-      margin-top: 30px;
-  }
-  
-  input[type = 'checkbox']+{
-      transform: scale(1.1);
-  }
-  
-  input[type = 'radio']{
-      transform: scale(1.1)
-  }
-  
-  .legend{
-      margin-top: 30px;
-  }
-  
-  h2{
-      width: fit-content;
-      margin: 0 auto;
-      padding: 15px;
-  }
-  
-  .HowMany{
-      margin-left: 13%;
-  }
-  
-  button{
-      margin: 3%;
-  }
-  
-  #myVideo{
-      width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  
-  head+body{
-      background-color: red;
-      opacity: 0.9;
-  }
-  
-  h2{
-    color: white;
-    font-family: Trebuchet MS;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  div{
-    color: white;
-    font-family: Trebuchet MS;
-    font-weight: bold;
-  }
-  
-  #RedWeaponDiv{
-    position: relative;
-    right: 7.7%;
-  }
-  
-  #howRandomiseWeapon{
-    padding-left: 8%;
-    background-color: blue;
-  }
-  
-  #WhatTypeWeaponAllDiv{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    background-color: green;
-    padding: 10px;
-  }
-  
-  #WhatTypeWeaponAllDiv>div{
-    background-color: black;
-  }
-  
-  #howMany>legend{
-    margin-top: 4%;
-  }
-  
-  .ForRandom{
-    display: grid;
+  max-width: 100%;
     width: fit-content;
-    min-width: 20%;
-  /*   grid-template-rows: ; */
-  }
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+header>div{
+  width: 40%;
+    margin: 0 auto;
+}
+
+img{
+    width: 10%;
+    vertical-align: top;
+    min-width: 20px;
+}
+
+div{
+    line-height: 15px;
+  background-color: rgba(40, 67, 135, 0.2);
+}
+.Legend{
+/*       width: fit-content; */
+    margin: 0 auto;
+    display: grid;
+    padding: 5px;
+    max-width: 20%;
+}
+
+.Weapon{
+    margin: 0 auto;
+    max-width: 100%;
+    width: fit-content;
+    min-width: 350px;
+    display: grid;
+/*       grid-template-rows: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 20px;
+  padding: 10px;
+}
+
+.Weapon>div{
+    margin-top: 15px;
+}
+
+.howManyLegend{
+    margin-left: 15%;
+}
+
+legend{
+    margin-left: 30%;
+    margin-bottom: 9px;
+}
+
+.legendImg{
+    width: 90%;
+}
+
+.LegendList{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    gap: 40px;
+    width: 80%;
+}
+
+.LegendR{
+    width: 100%;
+}
+
+.classimg{
+    width: 5%
+}
+
+.weaponImg{
+    max-height: 70%;
+    width: auto;
+    max-width: 90%;
+    min-width: 30%;
+    margin: 10px 5% 0px;
+    vertical-align: middle;
+}
+
+.weaponDivClass{
+    margin: 5px 5px;
+    max-height: 80%;
+}
+
+.WeaponList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    text-align: center;
+}
+
+#weapons1{
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+input[type = 'checkbox']+{
+    transform: scale(1.1);
+}
+
+input[type = 'radio']{
+    transform: scale(1.1)
+}
+
+.legend{
+    margin-top: 30px;
+}
+
+h2{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.HowMany{
+    margin-left: 13%;
+}
+
+button{
+    margin: 3%;
+}
+
+#myVideo{
+    width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+head+body{
+    opacity: 0.9;
+}
+
+h2{
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+div{
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+}
+
+#RedWeaponDiv{
+  position: relative;
+  right: 7.7%;
+}
+
+#howRandomiseWeapon{
+  padding-left: 8%;
+}
+
+#WhatTypeWeaponAllDiv{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 10px;
+}
+
+#WhatTypeWeaponAllDiv>div{
+}
+
+#howMany>legend{
+  margin-top: 4%;
+}
+
+.ForRandom{
+  display: grid;
+  width: fit-content;
+  min-width: 20%;
+/*   grid-template-rows: ; */
+}

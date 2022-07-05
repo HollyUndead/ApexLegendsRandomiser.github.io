@@ -277,18 +277,16 @@
     {
         if (ById('randomLegend').checked)
         {
-            ById('legendNumber').style.display = 'inline'
+            ById('Legend').style.display = 'inline'
         }
         else
         {
-            ById('legendNumber').style.display = 'none'
+            ById('Legend').style.display = 'none'
         }
 
         if (ById('randomWeapon').checked)
         {
-            ById('howRandomiseWeapon').style.display = 'inline';
-            ById('howMany').style.display = 'inline';
-            ById('WhatTypeWeapon').style.display = 'inline';
+            ById('Weapon').style.display = 'inline';
             WhatTypeWeapon();
             if (ById('allWeapon').checked)
             {
@@ -301,11 +299,7 @@
         }
         else
         {
-            ById('howRandomiseWeapon').style.display = 'none';
-            ById('howMany').style.display = 'none';
-            ById('WhatTypeWeapon').style.display = 'none';
-            ById('ammoType').style.display = 'none';
-            ById('classType').style.display = 'none';
+            ById('Weapon').style.display = 'none';
         }
     }
 
