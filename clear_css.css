@@ -140,6 +140,7 @@ button{
 }
 
 head+body{
+  background-color: red;
     opacity: 0.9;
 }
 
