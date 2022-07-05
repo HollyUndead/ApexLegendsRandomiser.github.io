@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <title>Apex Legends Randomiser</title>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/clear_css.css">
+    <head>
+        <!-- <video autoplay muted loop id="myVideo" src="./Apex Legends Wallpaper Engine.mp4"></video> -->
+        <img src="https://github.com/HollyUndead/jsonsforrandomizer/blob/main/img/ezgif-3-38466c44a8.gif?raw=true" id="myVideo" alt="">
+        <header class="TopScreen">
+
+            <div id="WhatRandomise" class="ForRandom">
+                <legend>Choouse random</legend>
+                <div><input type="checkbox" id="randomLegend" class="Saved" onclick="WhatRandomise(),SaveData(id)" checked><label for="randomLegend">Randomise Legends</label></div>
+                
+                <div><input type="checkbox" id="randomWeapon" class="Saved" onclick="WhatRandomise(),SaveData(id)"><label for="randomWeapon">Randomise Weapon</label></div>
+                <br>
+                <button onclick="ClearStorage()">Clear all choises</button>
+                
+                <button onclick="ButtonForRandom()">Random</button>
+            </div>
+
+
+
+        <div class="Legend">
+            <div id="legendNumber" >
+                <legend>Choose legend number</legend>
+
+                <input type="radio" id="oneLegend" class="LegendNumber Saved" name="Legend_Number" onclick="SaveLegNumber(id)"><label for="oneLegend">One Legend</label>
+                <br>
+                <input type="radio" id="twoLegends" class="LegendNumber Saved" name="Legend_Number" onclick="SaveLegNumber(id)"><label for="twoLegend">Two Legend</label>
+                <br>
+                <input type="radio" id="threeLegends" class="LegendNumber Saved" name="Legend_Number" onclick="SaveLegNumber(id)" checked><label for="threeLegend">Three Legend</label>
+                <br>
+                <input type="checkbox" id="allClass" class="Saved" onclick="DisplayLegendsClass(),SaveData(id)" checked><label for="allClass">All legend calss</label>
+            </div>
+
+            <div id="DivLegendClass" >
+                <legend>Choose your legend class</legend>
+                 
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/atackClass-removebg-preview.png" alt="" class="classimg" for="atack">
+                    <input type="checkbox" id="atack" class="Saved LegendClass" onclick="SaveData(id)" checked><label for="atack" class="legendClassL">Atack legend class</label>
+                </div>
+
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/scout-removebg-preview.png" alt="" class="classimg" for="scout">
+                    <input type="checkbox" id="scout" class="Saved LegendClass" onclick="SaveData(id)" checked><label for="scout" class="legendClassL">Scout legend class</label>
+                </div>
+
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/support-removebg-preview.png" alt="" class="classimg" for="support">
+                    <input type="checkbox" id="support" class="Saved LegendClass" onclick="SaveData(id)" checked><label for="support" class="legendClassL">Support legend class</label>
+                </div>
+
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/defence-removebg-preview.png" alt="" class="classimg" for="defence">
+                    <input type="checkbox" id="defence" class="Saved LegendClass" onclick="SaveData(id)" checked><label for="defence" class="legendClassL">Defence legend class</label>
+                </div>
+            </div>
+        </div>
+        <div class="Weapon">    
+            <div id="howRandomiseWeapon" >
+                <legend>How randomise weapon</legend>
+                <div id="RedWeaponDiv">
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/red%20weapon.png" alt="" class="classimg">
+                    <input type="checkbox" id="redWeapon" class="Saved RedWeapon" onclick="WeaponArrayLength(),SaveData(id)" checked><label for="redWeapon" class="RedWeapon">With weapon from "Care Packege"</label>
+                </div>
+
+                <div><input type="checkbox" id="withRepeat" class="Saved" onclick="SaveData(id)" checked><label for="withRepeat">Random with repeat weapon</label></div>
+
+                <div id="DivAllWeapon"><input type="checkbox" id="allWeapon" class="Saved" onchange="AllWeapon(),SaveData(id)"><label for="allWeapon">All Weapons</label></div>
+                
+                <div  id="DivMixed"><input type="checkbox" id="mixed" class="Saved" onchange="MixedWeapon(),SaveData(id)"><label for="mixed">Mixed random(class and ammo type)</label></div>  <!-- добавить всплывающее окно с объяснением 
+                https://www.google.com/search?client=opera-gx&q=при+наведении+на+элемент+поялвяется+доп+информация&sourceid=opera&ie=UTF-8&oe=UTF-8-->
+
+                <div id="howMany">
+                    <legend class="howManyLegend">How many weapon you want?</legend>
+                    <div class="HowMany">
+                        <input type="number" id="HowMany" class="tracker" min="1" onchange="HowManyWeapon()">
+                        
+                        <input type="range" id="weaponNumber" class="weaponNumber" min="1" value="max">
+                    </div>
+                </div>
+                
+            </div>
+
+           
+            <div id="WhatTypeWeaponAllDiv">
+            <div id="WhatTypeWeapon" >
+                <legend>Random weapon by</legend>
+                <div>
+                    <input type="radio" id="WhatTypeClass" name="WhatType" class="Svaed" onclick="WhatTypeWeapon()" checked><label for="WhatTypeClass">Weapon class</label>
+                    <br>
+                    <input type="radio" id="WhatTypeAmmo" name="WhatType" class="Saved" onclick="WhatTypeWeapon()"><label for="WhatTypeAmmo">Weapon ammo type</label>
+                </div>
+            </div>
+
+            <div id="ammoType" class="weaponType TopScreenDiv" style="display: none;">
+                <legend>Weapon by ammo type</legend>
+
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/light.png" class="classimg"><input type = "checkbox" class = "Saved ammoType" id = "light" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="light">Light ammo</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/heave.png" class="classimg"><input type = "checkbox" class = "Saved ammoType" id = "heavy" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="heavy">Heavy ammo</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/shotgun.png" class="classimg"><input type = "checkbox" class = "Saved ammoType" id = "shotgun" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="shotgun">Shotgun ammo</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/energy.png" class="classimg"><input type = "checkbox" class = "Saved ammoType" id = "energy" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="energy">Energy ammo</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/sniper.png" class="classimg"><input type = "checkbox" class = "Saved ammoType" id = "sniper" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="sniper">Sniper ammo</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/arrow.png" class="classimg"><input type = "checkbox" class = "Saved ammoType" id = "arrows" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="arrows">Arrows</label>
+                </div>
+            </div>
+
+            <div id="classType" class="weaponType TopScreenDiv" style="display: none;">
+                <legend>Weapon by class</legend>
+
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/ar-removebg-preview.png" class="TypeImg"><input type = "checkbox" class = "Saved classType" id = "AR" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="AR">AR</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/smg-removebg-preview.png" class="TypeImg"><input type = "checkbox" class = "Saved classType" id = "SMG" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="SMG">SMG</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/lmg-removebg-preview.png" class="TypeImg"><input type = "checkbox" class = "Saved classType" id = "LMG" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="LMG">LMG</label>
+                </div>
+                
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/marksamn-removebg-preview.png" class="TypeImg"><input type = "checkbox" class = "Saved classType" id = "marksman" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="marksman">Marksman</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/sniper-removebg-preview.png" class="TypeImg"><input type = "checkbox" class = "Saved classType" id = "sniper1" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="sniper1">Sniper</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/shotgun-removebg-preview.png" class="TypeImg"><input type = "checkbox" class = "Saved classType" id = "shotgun1" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="shotgun1">Shotgun</label>
+                </div>
+          
+                <div>
+                    <img src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/img/pistols-removebg-preview.png" class="TypeImg"><input type = "checkbox" class = "Saved classType" id = "pistols" checked onclick = "WeaponArrayLength(),SaveData(id)">  <label for="pistols">Pistols</label>
+                </div>
+            </div>
+        </div>
+        </div>
+        </header>
+    </head>
+
+    <body>
+
+        <div id="legend" class="legend">
+            <h2 id="LegendTitle" class="RandomTitle"></h2>
+
+            <div id="legendOutPut" class="LegendList"></div>
+        </div>
+
+        <div id="weapons1">
+            <h2 id="WeaponTitle" class="RandomTitle"></h2>
+
+            <div id="WeaponOutPut" class="WeaponList"></div>
+        </div>
+
+        <script src="https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/apex_randomiser.js"></script>
+        <!-- <script src="./randomForApex.js"></script> -->
+    </body>
+
+</html>
