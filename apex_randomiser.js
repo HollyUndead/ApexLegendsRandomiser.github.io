@@ -51,8 +51,8 @@ function ButtonForRandom()
 {
     ById('WeaponOutPut').innerHTML = '';
     ById('legendOutPut').innerHTML = '';
-    if (ById('randomLegend').checked) {LegendUpdate(); RandomisedLegend();}else{LegendListOff()}
-    if (ById('randomWeapon').checked) {WeaponUpdate(); RandomisedWeapon();}else{WeaponListOff()}
+    if (ById('randomLegend').checked) {LegendUpdate(); setTimeout(RandomisedLegend(), 1500)}else{LegendListOff()}
+    if (ById('randomWeapon').checked) {WeaponUpdate(); setTimeout(RandomisedWeapon(), 1500)}else{WeaponListOff()}
 }
 
 // create array
