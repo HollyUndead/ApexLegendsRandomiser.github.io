@@ -1,4 +1,4 @@
-const requestURl = 'https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/weapon.json';
+const requestURl = 'https://raw.githubusercontent.com/HollyUndead/ApexLegendsRandomiser.github.io/main/weapon.json';
 
 function changeColor()
 {
@@ -49,11 +49,10 @@ function RandomFromArray(array)
 
 function ButtonForRandom()
 {
-
     ById('WeaponOutPut').innerHTML = '';
     ById('legendOutPut').innerHTML = '';
-    if (ById('randomLegend').checked) {RandomisedLegend(); ById('legend').style.display = 'block'}else{ById('legend').style.display = 'none'}
-    if (ById('randomWeapon').checked) {RandomisedWeapon(); ById('weapons1').style.display = 'block'}else{ById('weapons1').style.display = 'none'}
+    if (ById('randomLegend').checked) {LegendUpdate(); RandomisedLegend();}else{LegendListOff()}
+    if (ById('randomWeapon').checked) {WeaponUpdate(); RandomisedWeapon();}else{WeaponListOff()}
 }
 
 // create array

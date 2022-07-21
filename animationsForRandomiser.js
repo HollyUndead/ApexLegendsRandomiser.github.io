@@ -105,3 +105,54 @@ function AllWeaponOff(){
         translateX: 0,
     });
 }
+
+function LegendListOn(){
+    const move = anime({
+        targets: '#legend',
+        translateY: 0,
+    })
+}
+
+function LegendListOff(){
+    const move = anime({
+        targets: '#legend',
+        translateX: -2000
+    })
+}
+const move = anime({
+    targets: '#legend',
+    translateX: -2000,
+})
+function LegendUpdate(){
+    const move = anime({
+        targets: '#legend',
+        translateX: -2000,
+    })
+    setTimeout(() =>
+    {const move1 = anime({
+        targets: '#legend',
+        translateX: 0,
+    })}, 1000)
+}
+const move1 = anime({
+    targets: '#weapons1',
+    translateX: -2000,
+})
+function WeaponUpdate(){
+    const move = anime({
+        targets: '#weapons1',
+        translateX: -2000,
+    })
+    setTimeout(() =>
+    {const move1 = anime({
+        targets: '#weapons1',
+        translateX: 0,
+    })}, 1000)
+}
+
+function WeaponListOff(){
+    const move = anime({
+        targets: '#weapons1',
+        translateX: -2000
+    })
+}
