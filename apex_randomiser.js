@@ -1,4 +1,4 @@
-const requestURl = 'https://raw.githubusercontent.com/HollyUndead/jsonsforrandomizer/main/weapon.json';
+const requestURl = 'https://raw.githubusercontent.com/HollyUndead/ApexLegendsRandomiser.github.io/main/weapon.json';
 
 function changeColor()
 {
