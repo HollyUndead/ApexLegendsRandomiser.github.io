@@ -1,5 +1,5 @@
 .TopScreen{
-  max-width: 100%;
+  min-width: 90%;
     width: fit-content;
     margin: 0 auto;
     padding: 1em;
@@ -9,8 +9,9 @@
 }
 
 header>div{
-  width: 40%;
+  width: 30%;
     margin: 0 auto;
+  height: fit-content;
 }
 
 img{
@@ -19,16 +20,12 @@ img{
     min-width: 20px;
 }
 
-div{
-    line-height: 15px;
-  background-color: rgba(40, 67, 135, 0.2);
+div>div{
+    background-color: rgba(40, 67, 135, 0.3);
 }
+
 .Legend{
-/*       width: fit-content; */
-    margin: 0 auto;
-    display: grid;
     padding: 5px;
-    max-width: 20%;
 }
 
 .Weapon{
@@ -36,11 +33,8 @@ div{
     max-width: 100%;
     width: fit-content;
     min-width: 350px;
-    display: grid;
-/*       grid-template-rows: 1fr 1fr; */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     column-gap: 20px;
-  padding: 10px;
+    padding: 10px;
 }
 
 .Weapon>div{
@@ -57,15 +51,8 @@ legend{
 }
 
 .legendImg{
-    width: 90%;
-}
-
-.LegendList{
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-    gap: 40px;
-    width: 80%;
+  max-width: 100%;
+    width: auto;
 }
 
 .LegendR{
@@ -92,7 +79,7 @@ legend{
 
 .WeaponList{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 33%));
     text-align: center;
 }
 
@@ -141,7 +128,8 @@ button{
 
 head+body{
   background-color: red;
-    opacity: 0.9;
+    opacity: 0.94;
+    overflow:hidden;
 }
 
 h2{
@@ -157,11 +145,6 @@ div{
   font-weight: bold;
 }
 
-#RedWeaponDiv{
-  position: relative;
-  right: 7.7%;
-}
-
 #howRandomiseWeapon{
   padding-left: 8%;
 }
@@ -172,7 +155,8 @@ div{
   padding: 10px;
 }
 
-#WhatTypeWeaponAllDiv>div{
+#WhatTypeWeaponAllDiv ~ div{
+  
 }
 
 #howMany>legend{
@@ -183,5 +167,58 @@ div{
   display: grid;
   width: fit-content;
   min-width: 20%;
-/*   grid-template-rows: ; */
+  background-color: rgba(40, 67, 135, 0.3);
+}
+
+.LegendDiv{
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.LegendList{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  margin: 0 auto;
+  padding-left: 5%;
+  text-align: center;
+}
+
+#legend{
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#weapons1{
+  display: none;
+  width: 90%;
+}
+
+input[type='checkbox'], input[type='radio']{
+  display: none;
+}
+
+input:hover+label, img+input{
+  background: rgb(99 70 0 / 54%);
+}
+
+label{
+  margin-left: 20px;
+}
+
+#ammoType{
+  position: absolute;
+  width: 173px;
+  /* right: 15px; */
+}
+
+#classType{
+  position: absolute;
+  width: 173px;
+}
+
+#WhatTypeWeapon{
+  width: 173px;
 }
