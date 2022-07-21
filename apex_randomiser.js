@@ -132,8 +132,9 @@ async function RandomisedWeapon()
     let weaponArray = WeaponArray(array);
     if (weaponArray.length == 1)
     {
-        ById('weapons1').style.display = 'none';
         alert('Are you stupid? You want to shoot from finger?')
+        setTimeout(
+        WeaponListOff(), 1500)
         return;
     }
     if (ById('redWeapon').checked == false)

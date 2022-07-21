@@ -122,6 +122,7 @@ function LegendListOff(){
 const move = anime({
     targets: '#legend',
     translateX: -2000,
+    translateY: 30
 })
 function LegendUpdate(){
     const move = anime({
@@ -137,6 +138,7 @@ function LegendUpdate(){
 const move1 = anime({
     targets: '#weapons1',
     translateX: -2000,
+    translateY: 30
 })
 function WeaponUpdate(){
     const move = anime({
