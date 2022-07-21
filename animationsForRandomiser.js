@@ -8,7 +8,7 @@ function LegendOn(){
 function LegendOff(){
     const move = anime({
         targets: '#Legend',
-        translateY:-500,
+        translateY:-300,
     });
 }
 
@@ -22,7 +22,7 @@ function AllClassOn(){
 function AllClassOff(){
     const move = anime({
         targets: '#DivLegendClass',
-        translateY:-500,
+        translateY:-400,
     });
 }
 

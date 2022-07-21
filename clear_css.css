@@ -129,7 +129,7 @@ button{
 head+body{
   background-color: red;
     opacity: 0.94;
-    overflow:hidden;
+    overflow-x:hidden;
 }
 
 h2{

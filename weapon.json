@@ -1,0 +1,178 @@
+{
+    "weapon": {
+        "ammoType":{
+            "light":[
+                "R-301 Carabin",
+                "Alternator SMG",
+                "P2020",
+                "RE-45 auto",
+                "R-99 SMG",
+                "G7 Scout"
+            ],
+            "heavy":[
+                "C.A.R SMG",
+                "Rampage LMG",
+                "30-30 Repeater",
+                "Wingman",
+                "M600 Spitfire",
+                "Proweler burst PDW",
+                "Hemlok burst AR",
+                "VK-47 Flatline"
+            ],
+            "shotgun":[
+                "Mozambike shotgun",
+                "Peacekeeper",
+                "EVA-8 Auto",
+                "Mastif shotgun"
+            ],
+            "energy":[
+                "Triple take",
+                "Devotion LMG",
+                "Havoc rifle",
+                "L-Star EMG",
+                "Volt SMG"
+            ],
+            "sniper":[
+                "Sentinel",
+                "Charge rifle",
+                "Longbow DMR",
+                "Kraber 50-Cal sniper"
+            ],
+            "arrows":[
+                "Bocek compound bow"
+            ]
+        },
+        "redWeapon":[
+            "Kraber 50-Cal sniper",
+            "Volt SMG",
+            "Mastif shotgun",
+            "G7 Scout"
+        ],
+        "weaponType":{
+            "AR":[
+                "Havoc rifle",
+                "VK-47 Flatline",
+                "Hemlok burst AR",
+                "R-301 Carabin"
+            ],
+            "SMG":[
+                "Alternator SMG",
+                "Proweler burst PDW",
+                "R-99 SMG",
+                "Volt SMG",
+                "C.A.R SMG"
+            ],
+            "LMG":[
+                "Devotion LMG",
+                "L-Star EMG",
+                "M600 Spitfire",
+                "Rampage LMG"
+            ],
+            "marksman":[
+                "G7 Scout",
+                "Triple take",
+                "30-30 Repeater",
+                "Bocek compound bow"
+            ],
+            "sniper1":[
+                "Sentinel",
+                "Charge rifle",
+                "Longbow DMR",
+                "Kraber 50-Cal sniper"
+            ],
+            "shotgun1":[
+                "Mozambike shotgun",
+                "Peacekeeper",
+                "EVA-8 Auto",
+                "Mastif shotgun"
+            ],
+            "pistols":[
+                "RE-45 auto",
+                "P2020",
+                "Wingman"
+            ]
+        }
+    },
+    "legtype":{
+        "scout":[
+            "Bloodhound",
+            "Pathfinder",
+            "Crypto",
+            "Valkirie", 
+            "Seer"
+        ],
+        "support":[
+            "Lifeline",
+            "Loba"
+        ],
+        "defence":[
+            "Gibraltar",
+            "Caustic", 
+            "Wattson",
+            "Rampart",
+            "NewCastle"
+        ],
+        "atack":[
+            "Wraith", 
+            "Bangalore",
+            "Mirage", 
+            "Octane",
+            "Revenant",
+            "Horizon", 
+            "Fuse",
+            "Ash",
+            "Mad Maggie"
+        ]
+    },
+    "image":{
+        "Ash":"./apex-section-bg-legends-ash-xl.jpg.adapt.1920w-removebg-preview.png.png",
+        "Wraith":"./wraith-removebg-preview.png",
+        "Bangalore":"./apex-section-bg-legends-bangalore-xl.jpg.adapt.1920w-removebg-preview.png",
+        "Mirage":"./mirage-removebg-preview.png",
+        "Octane":"./octane-removebg-preview.png",
+        "Revenant":"./revenant-removebg-preview.png",
+        "Horizon":"./horizan-removebg-preview.png",
+        "Fuse":"./fuse-removebg-preview.png",
+        "Mad Maggie":"./mad_magie-removebg-preview.png",
+        "Gibraltar":"./giblartar-removebg-preview.png",
+        "Caustic":"./caustic-removebg-preview.png",
+        "Wattson":"./watson-removebg-preview.png",
+        "Rampart":"./rampart-removebg-preview.png",
+        "NewCastle":"./apex-section-bg-legends-newcastle-xl.jpg.adapt.1456w-removebg-preview.png",
+        "Lifeline":"./lifeline-removebg-preview.png",
+        "Loba":"./loba-removebg-preview.png",
+        "Bloodhound":"./bloodhound-removebg-preview.png",
+        "Pathfinder":"./pathfinder-removebg-preview.png",
+        "Crypto":"./crypto-removebg-preview.png",
+        "Valkirie":"./valkiry-removebg-preview.png",
+        "Seer":"./seer-removebg-preview.png",
+        "RE-45 auto": "./re-45-removebg-preview.png",
+        "P2020": "./p2020-removebg-preview.png",
+        "Wingman": "./wingman-removebg-preview.png",
+        "Mozambike shotgun": "./mozmbik-removebg-preview.png",
+        "Peacekeeper": "./peacekeeeper-removebg-preview.png",
+        "EVA-8 Auto":"./eva-8-removebg-preview.png",
+        "Mastif shotgun":"./mastiff-removebg-preview.png",
+        "Sentinel":"./sentinal-removebg-preview.png",
+        "Charge rifle":"./charge_rifle-removebg-preview.png",
+        "Longbow DMR":"./long_bow-removebg-preview.png",
+        "Kraber 50-Cal sniper":"./kraber-removebg-preview.png",
+        "G7 Scout":"./g7_scout-removebg-preview.png",
+        "Triple take":"./triple_take-removebg-preview.png",
+        "30-30 Repeater":"./30-30_repeater-removebg-preview.png",
+        "Bocek compound bow":"./bocek-removebg-preview.png",
+        "Devotion LMG":"./devotion-removebg-preview.png",
+        "L-Star EMG":"./l-star-removebg-preview.png",
+        "M600 Spitfire":"./spitfire-removebg-preview.png",
+        "Rampage LMG":"./rampage-removebg-preview.png",
+        "Alternator SMG":"./alternator-removebg-preview.png",
+        "Proweler burst PDW":"./prowler-removebg-preview.png",
+        "R-99 SMG":"./r-99-removebg-preview.png",
+        "Volt SMG":"./volt-removebg-preview.png",
+        "C.A.R SMG":"./car-removebg-preview.png",
+        "Havoc rifle":"./havoc-removebg-preview.png",
+        "VK-47 Flatline":"./flatline-removebg-preview.png",
+        "Hemlok burst AR":"./hemlok-removebg-preview.png",
+        "R-301 Carabin":"./R-301-removebg-preview.png"
+    }
+}
