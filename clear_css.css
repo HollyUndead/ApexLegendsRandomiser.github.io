@@ -75,6 +75,7 @@ legend{
 .weaponDivClass{
     margin: 5px 5px;
     max-height: 80%;
+    transition: 1s;
 }
 
 .WeaponList{
@@ -85,7 +86,7 @@ legend{
 
 #weapons1{
     margin: 0px auto;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 input[type = 'checkbox']+{
@@ -174,13 +175,13 @@ div{
   width: fit-content;
   height: fit-content;
   margin: 0 auto;
+  transition: 1s;
 }
 
 .LegendList{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
   margin: 0 auto;
-  padding-left: 5%;
   text-align: center;
 }
 
@@ -219,4 +220,12 @@ label{
 
 #WhatTypeWeapon{
   width: 173px;
+}
+
+.LegendDiv:hover{
+  transform: scale(1.2);
+}
+
+.weaponDivClass:hover{
+  transform: scale(1.4);
 }

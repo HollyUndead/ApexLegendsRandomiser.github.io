@@ -44,15 +44,12 @@ function RandomFromArray(array)
     a=Math.floor(Math.random()*(array.length-1)+1);
     return(array[a]);
 }
-
 // buttons
 
 function ButtonForRandom()
 {
-    ById('WeaponOutPut').innerHTML = '';
-    ById('legendOutPut').innerHTML = '';
-    if (ById('randomLegend').checked) {LegendUpdate(); setTimeout(RandomisedLegend(), 1500)}else{LegendListOff()}
-    if (ById('randomWeapon').checked) {WeaponUpdate(); setTimeout(RandomisedWeapon(), 1500)}else{WeaponListOff()}
+    if (ById('randomLegend').checked) {LegendUpdate(); RandomisedLegend()}else{LegendListOff()}
+    if (ById('randomWeapon').checked) {WeaponUpdate(); RandomisedWeapon()}else{WeaponListOff()}
 }
 
 // create array
@@ -134,7 +131,7 @@ async function RandomisedWeapon()
     {
         alert('Are you stupid? You want to shoot from finger?')
         setTimeout(
-        WeaponListOff(), 1500)
+        WeaponListOff(), 500)
         return;
     }
     if (ById('redWeapon').checked == false)
@@ -172,7 +169,9 @@ async function RandomisedWeapon()
     }
 
 
-    OutPutWeapon(WeaponList, WeaponImg)
+    setTimeout(() => {
+        OutPutWeapon(WeaponList, WeaponImg)
+    }, 500);
 }
 
 async function RandomisedLegend()
@@ -207,7 +206,9 @@ async function RandomisedLegend()
         legends.push(leg1);
         if (ById('oneLegend').checked)
         {
-            OutPutLegends(legends, urlObj)
+            setTimeout(() => {
+                OutPutLegends(legends, urlObj)
+            }, 500);
         }
         if (ById('twoLegends').checked)
         {
@@ -217,7 +218,9 @@ async function RandomisedLegend()
             }
             while(leg1 == leg2)
             legends.push(leg2);
-            OutPutLegends(legends, urlObj);
+            setTimeout(() => {
+                OutPutLegends(legends, urlObj)
+            }, 500);
         }
         if (ById('threeLegends').checked)
         {
@@ -229,7 +232,9 @@ async function RandomisedLegend()
             while(leg1==leg2 || leg2==leg3 || leg1==leg3)
             legends.push(leg2);
             legends.push(leg3);
-            OutPutLegends(legends, urlObj);
+            setTimeout(() => {
+                OutPutLegends(legends, urlObj)
+            }, 500);
         }
     }
 }
@@ -238,6 +243,7 @@ async function RandomisedLegend()
 
 function OutPutLegends(legendList, urlObj)
 {
+    ById('legendOutPut').innerHTML = '';
     ById('legend').style.display = 'block'
     const legendOutPut = ById("legendOutPut");
     ById('LegendTitle').innerHTML = 'Legend'
@@ -264,6 +270,7 @@ function OutPutLegends(legendList, urlObj)
 
 function OutPutWeapon(WeaponList, WeaponImg)
 {
+    ById('WeaponOutPut').innerHTML = '';
     let weaponOutPut = ById('WeaponOutPut')
     ById('WeaponTitle').innerHTML = 'Weapon'
     let count = 1;
