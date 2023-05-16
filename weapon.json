@@ -98,12 +98,13 @@
             "Bloodhound",
             "Pathfinder",
             "Crypto",
-            "Valkirie", 
+            "Valkirie",
+            "Seer"
         ],
         "sport":[
             "Lifeline",
             "Loba"
-            "Seer"
+            
         ],
         "defence":[
             "Gibraltar",
