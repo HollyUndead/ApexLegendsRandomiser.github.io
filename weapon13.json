@@ -94,40 +94,40 @@
         }
     },
     "legtype":{
-        "scout":[
+        "recon":[
             "Bloodhound",
-            "Pathfinder",
             "Crypto",
-            "Valkirie",
             "Seer"
         ],
         "support":[
             "Lifeline",
             "Loba",
-            "Lobs"
-        ],
-        "defence":[
             "Gibraltar",
+            "NewCastle"
+        ],
+        "controller":[
             "Caustic", 
             "Wattson",
             "Rampart",
+            "Catalys"
+            
+            "Gibraltar",
             "NewCastle"
         ],
-        "atack":[
-            "Wraith", 
-            "Bangalore",
-            "Mirage", 
-            "Octane",
-            "Revenant",
-            "Horizon", 
-            "Fuse",
+        "assault":[
             "Ash",
-            "Mad Maggie"
-        ],
-        "ass":[
-            "Wraith", 
-            "Mirage", 
-            "Lobs"
+            "Bangalore",
+            "Fuse",
+            "Mad Maggie",
+            "Revenant",
+        ]
+        "skirmisher":[
+            "Horizon",
+            "Mirage",
+            "Octane",
+            "Pathfinder",
+            "Valkirie",
+            "Wraith",   
         ]
     },
     "image":{
