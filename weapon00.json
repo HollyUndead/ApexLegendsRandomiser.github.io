@@ -97,36 +97,27 @@
         "scout":[
             "Bloodhound",
             "Crypto",
-            "Seer",
-            "Wantj"
+            "Seer"
         ],
         "support":[
             "Lifeline",
             "Loba",
-            "Gibraltar",
-            "NewCastle"
+            "Gibraltar"
         ],
         "defence":[
             "Caustic", 
             "Wattson",
-            "Rampart",
-            "Catalys",
-            "Gibraltar"
+            "Rampart"
         ],
         "assault":[
             "Ash",
             "Bangalore",
-            "Fuse",
-            "Mad Maggie",
-            "Revenant"
+            "Fuse"
         ]
         "skirmisher":[
             "Horizon",
             "Mirage",
-            "Octane",
-            "Pathfinder",
-            "Valkirie",
-            "Wraith"  
+            "Octane" 
         ]
     },
     "image":{
