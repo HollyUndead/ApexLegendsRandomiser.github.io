@@ -94,7 +94,7 @@
         }
     },
     "legtype":{
-        "recon":[
+        "scout":[
             "Bloodhound",
             "Crypto",
             "Seer",
@@ -106,7 +106,7 @@
             "Gibraltar",
             "NewCastle"
         ],
-        "controller":[
+        "defence":[
             "Caustic", 
             "Wattson",
             "Rampart",
