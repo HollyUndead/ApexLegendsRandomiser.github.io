@@ -94,7 +94,7 @@
         }
     },
     "legtype":{
-        "scout":[
+        "recon":[
             "Bloodhound",
             "Pathfinder",
             "Crypto",
