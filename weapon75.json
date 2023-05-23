@@ -97,7 +97,8 @@
         "recon":[
             "Bloodhound",
             "Crypto",
-            "Seer"
+            "Seer",
+            "Wantj"
         ],
         "support":[
             "Lifeline",
@@ -110,16 +111,14 @@
             "Wattson",
             "Rampart",
             "Catalys"
-            
             "Gibraltar",
-            "NewCastle"
         ],
         "assault":[
             "Ash",
             "Bangalore",
             "Fuse",
             "Mad Maggie",
-            "Revenant",
+            "Revenant"
         ]
         "skirmisher":[
             "Horizon",
@@ -127,7 +126,7 @@
             "Octane",
             "Pathfinder",
             "Valkirie",
-            "Wraith",   
+            "Wraith"  
         ]
     },
     "image":{
