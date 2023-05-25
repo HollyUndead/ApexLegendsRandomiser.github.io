@@ -44,9 +44,9 @@
         },
         "redWeapon":[
             "Kraber 50-Cal sniper",
-            "Volt SMG",
-            "Mastif shotgun",
-            "G7 Scout"
+            "Hemlok burst AR",
+            "Bocek compound bow",
+            "RE-45 auto"
         ],
         "weaponType":{
             "AR":[
@@ -94,34 +94,39 @@
         }
     },
     "legtype":{
-        "scout":[
+        "recon":[
             "Bloodhound",
-            "Pathfinder",
             "Crypto",
-            "Valkirie", 
-            "Seer"
+            "Seer",
+            "Wantage"
         ],
         "support":[
             "Lifeline",
-            "Loba"
-        ],
-        "defence":[
+            "Loba",
             "Gibraltar",
+            "NewCastle"
+        ],
+        "controller":[
             "Caustic", 
             "Wattson",
             "Rampart",
-            "NewCastle"
+            "Catalys",
+            "Gibraltar"
         ],
-        "atack":[
-            "Wraith", 
-            "Bangalore",
-            "Mirage", 
-            "Octane",
-            "Revenant",
-            "Horizon", 
-            "Fuse",
+        "assault":[
             "Ash",
-            "Mad Maggie"
+            "Bangalore",
+            "Fuse",
+            "Mad Maggie",
+            "Revenant"
+        ],
+        "skirmisher":[
+            "Horizon",
+            "Mirage",
+            "Octane",
+            "Pathfinder",
+            "Valkirie",
+            "Wraith"  
         ]
     },
     "image":{
