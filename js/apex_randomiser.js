@@ -184,12 +184,17 @@ async function RandomisedLegend()
     legendArray = LegendArray(array);
     let urlObj = array.image;
     let legends = [];
-    if(ById('recon').checked == true
+    if(ById('recon').checked == false 
          && ById('support').checked == false 
             && ById('controller').checked == false 
                && ById('assault').checked == false
                  && ById('skirmisher').checked == false
                   && ById('threeLegends').checked == true)
+    {
+        ById('legend').style.display = 'none';
+        alert("Can't random because only two legends");
+        return;
+    }    
     if (legendArray.length <= 1)
     {
         ById('legend').style.display = 'none';
